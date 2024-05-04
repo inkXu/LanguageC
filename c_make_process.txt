@@ -1,0 +1,16 @@
+
+1、预处理       gcc -E hello.c -o hello.i
+2、编译         gcc -S hello.s -o hello.s
+3、汇编         gcc -c hello.s -o hello.o
+4、链接         gcc hello.o -o hello_dlf
+
+
+1、与编译
+   将.c中的头文件展开、宏展开
+   生成的文件是.i文件
+2、编译
+   将预处理之后的.i文件生成.s汇编文件
+3、汇编
+   将.s汇编文件生成.o目标文件
+4、链接
+   将.o文件链接成目标文件
